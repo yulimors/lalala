@@ -118,6 +118,12 @@ public partial class MainPage : ContentPage
 
     private async void OnAboutClicked(object sender, EventArgs e)
     {
+        // Переходимо через маршрут (це активує пункт у меню зліва)
         await Shell.Current.GoToAsync("///AboutPage");
+    }
+
+    private void Exit_Clicked(object sender, EventArgs e)
+    {
+        System.Environment.Exit(0);
     }
 }
